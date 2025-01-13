@@ -1,14 +1,15 @@
 <template>
-  <section class="banner">
+  <section>
     <div class="banner-container">
       <img src="../assets/banner-home.jpg" />
-      <div class="banner-text">
+      <div class="banner-content">
         <p class="main-text">
           <strong>Bem-vindo</strong> ao espaço onde cada palavra amplifica sua mensagem.
           Conecte-se <strong>Nas Ondas com Luiz Evandro</strong> e potencialize eventos e campanhas.
         </p>
         <p class="sub-text">Explore nossos serviços de locução para eventos, companhas publicitárias, cerimônias e muito
           mais.</p>
+        <button class="more-info">Saiba mais</button>
       </div>
     </div>
   </section>
@@ -29,7 +30,7 @@ img {
   display: block;
 }
 
-.banner-text {
+.banner-content {
   position: absolute;
   top: 40%;
   width: 50rem;
@@ -45,6 +46,18 @@ img {
 
 .main-text strong {
   font-weight: 700;
+}
+
+.more-info {
+  background: linear-gradient(90deg, #e7a617 0%, #ffd500 100%);
+  color: var(--purple);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  margin-top: 4rem;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
 }
 
 .sub-text {

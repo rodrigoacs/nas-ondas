@@ -1,7 +1,10 @@
 <template>
   <div class="background">
     <div class="container">
-      <h1>logo</h1>
+      <img
+        class="logo"
+        src="../assets/logo-texto.png"
+      >
       <div class="navs">
         <a class="nav">INÍCIO</a>
         <a class="nav">REPORTAGENS</a>
@@ -22,26 +25,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  padding: 0 180px;
   height: 140px;
+}
+
+.logo {
+  width: 260px;
+  object-fit: contain;
 }
 
 .navs {
   display: flex;
-  gap: 4rem;
+  align-items: center;
+  gap: 3rem;
 }
 
 .nav {
-  color: #8d00d3;
+  color: var(--purple);
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .background {
-  background-color: #f5c81e;
-  opacity: 1;
-  background-image: linear-gradient(#f4c014 0.7000000000000001px, transparent 0.7000000000000001px), linear-gradient(to right, #f4c014 0.7000000000000001px, #f5c81e 0.7000000000000001px);
-  background-size: 14px 14px;
+  background-color: var(--yellow);
+  background-image: linear-gradient(#e39c0f 1px, transparent 1px),
+    linear-gradient(to right, #e39c0f 1px, #e9ae18 1px);
+  background-size: 20px 20px;
 }
 </style>
