@@ -12,7 +12,7 @@
             type="text/html"
             width="640"
             height="360"
-            src="http://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
             frameborder="0"
           />
           <iframe
@@ -20,14 +20,14 @@
             type="text/html"
             width="640"
             height="360"
-            src="http://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
             frameborder="0"
           /><iframe
             id="ytplayer"
             type="text/html"
             width="640"
             height="360"
-            src="http://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
             frameborder="0"
           />
         </div>
