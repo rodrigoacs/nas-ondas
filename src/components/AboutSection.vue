@@ -17,7 +17,7 @@
         </p>
       </div>
       <img
-        src="../../placeholder.png"
+        src="../../public/placeholder.png"
         class="profile-picture"
       >
     </div>
