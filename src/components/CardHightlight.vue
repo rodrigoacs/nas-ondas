@@ -30,10 +30,9 @@ const props = defineProps({
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
-  margin: 0 auto;
   max-width: 100%;
   width: 600px;
-  background-color: var(--highlight-color);
+  background-color: var(--highlight-color) !important;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }

@@ -9,7 +9,7 @@
         </p>
         <p class="sub-text">Explore nossos serviços de locução para eventos, companhas publicitárias, cerimônias e muito
           mais.</p>
-        <button class="more-info">Saiba mais</button>
+        <button class="more-info"><a href="#about">Saiba mais</a></button>
       </div>
     </div>
   </section>
@@ -19,6 +19,12 @@
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 .banner-container {
   position: relative;
   width: 100%;
@@ -51,8 +57,7 @@ img {
 .more-info {
   background: linear-gradient(90deg, #e7a617 0%, #ffd500 100%);
   color: var(--purple);
-  font-size: 1.6rem;
-  font-weight: 700;
+
   padding: 1.5rem 3rem;
   margin-top: 4rem;
   border: none;

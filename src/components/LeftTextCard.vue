@@ -23,24 +23,21 @@ const props = defineProps({
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
   background-color: var(--off-white);
   border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
 }
 
 .card-image {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 140px;
   border-radius: 12px;
   object-fit: cover;
   border: 4px solid var(--purple);
 }
 
 .card-text {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   color: var(--dark-purple);
   font-weight: bold;

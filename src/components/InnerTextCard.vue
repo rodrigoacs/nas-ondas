@@ -23,8 +23,8 @@ const props = defineProps({
 .card {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: 300px;
+  width: 560px;
+  height: 280px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

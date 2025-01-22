@@ -6,11 +6,11 @@
         src="../assets/logo-texto.png"
       >
       <div class="navs">
-        <a class="nav">INÍCIO</a>
-        <a class="nav">REPORTAGENS</a>
-        <a class="nav">ENTREVISTAS</a>
-        <a class="nav">CONTATO</a>
-        <a class="nav">SOBRE NÓS</a>
+        <a href="#home"> INÍCIO </a>
+        <!-- <a href="#news"> NOTICIAS </a> -->
+        <a href="#interview"> ENTREVISTAS </a>
+        <a href="#about">QUEM SOMOS?</a>
+        <a href="#contact">CONTATO</a>
       </div>
     </div>
   </div>
@@ -26,11 +26,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 180px;
-  height: 140px;
+  height: 80px;
 }
 
 .logo {
-  width: 260px;
+  max-width: 100%;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -40,7 +41,7 @@
   gap: 3rem;
 }
 
-.nav {
+.navs a {
   color: var(--purple);
   font-size: 24px;
   font-weight: 700;

@@ -3,7 +3,9 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --grey: #b9b9b9;
   --purple: #8d00d3;
+  --green-wp: #25d366;
   --dark-purple: #441469;
   --yellow: #e9ae18;
   --off-white: #f4f4f4;
@@ -17,6 +19,10 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
