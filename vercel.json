@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://meudominio.com/$1",
+      "permanent": true
+    }
+  ]
+}
