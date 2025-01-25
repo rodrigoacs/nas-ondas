@@ -1,16 +1,50 @@
 <template>
   <div class="background">
     <div class="container">
-      <img
-        class="logo"
-        src="../assets/logo-texto.png"
+      <a
+        href="#home"
+        class="logo-link"
       >
+        <img
+          class="logo"
+          src="../assets/logo-texto.png"
+          alt="Logo"
+        />
+      </a>
       <div class="navs">
-        <a href="#home"> INÍCIO </a>
-        <!-- <a href="#news"> NOTICIAS </a> -->
-        <a href="#interview"> ENTREVISTAS </a>
-        <a href="#about">QUEM SOMOS?</a>
-        <a href="#contact">CONTATO</a>
+        <a
+          href="#interview"
+          class="nav-item"
+        >
+          <span class="nav-text">ENTREVISTAS</span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1436/1436769.png"
+            alt="Entrevistas"
+            class="icon"
+          />
+        </a>
+        <a
+          href="#about"
+          class="nav-item"
+        >
+          <span class="nav-text">QUEM SOMOS?</span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/681/681494.png"
+            alt="Quem Somos"
+            class="icon"
+          />
+        </a>
+        <a
+          href="#contact"
+          class="nav-item"
+        >
+          <span class="nav-text">CONTATO</span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/8485/8485251.png"
+            alt="Contato"
+            class="icon"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -24,27 +58,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 180px;
+  padding: 0 20px;
   height: 80px;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
 }
 
 .logo {
   max-width: 100%;
   height: 70px;
   object-fit: contain;
+  justify-self: flex-start;
 }
 
 .navs {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.navs a {
-  color: var(--purple);
-  font-size: 24px;
-  font-weight: 700;
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
+  color: var(--purple);
+  font-size: 1.5rem;
+}
+
+.nav-text {
+  display: inline;
+  font-weight: 700;
+}
+
+.icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(1732%) hue-rotate(250deg) brightness(92%) contrast(85%);
 }
 
 .background {
@@ -54,41 +109,22 @@
   background-size: 20px 20px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-  .container {
-    padding: 10px 20px;
-    height: auto;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .logo {
-    height: 60px;
-  }
-
-  .navs {
+  .nav-text {
     display: none;
   }
 
-  .navs a {
-    font-size: 20px;
+  .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 5px 10px;
-    gap: 1rem;
-  }
-
-  .logo {
-    height: 50px;
-  }
-
-  .navs a {
-    font-size: 18px;
+  .icon {
+    width: 20px;
+    height: 20px;
   }
 }
 </style>
