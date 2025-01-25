@@ -3,33 +3,41 @@
     <div class="container">
       <div class="text-section">
         <p class="header">Entre em contato!</p>
-        <!-- <p class="content">
-          Não precisa se estressar com chatbots, filas de espera ou em ter que ficar abrindo vários tickets, é só ligar
-          ou chamar no WhatsApp que a gente responde.
-        </p> -->
       </div>
       <div class="contact-section">
-        <div class="card whatsapp">
+        <a
+          href="https://wa.me/5531982676163"
+          target="_blank"
+          class="card whatsapp"
+        >
           <div class="icon whatsapp"></div>
           <div class="info">
             <p class="title">WhatsApp</p>
             <p class="detail">(31) 98267-6163</p>
           </div>
-        </div>
-        <div class="card">
+        </a>
+
+        <a
+          href="tel:+5531982676163"
+          class="card"
+        >
           <div class="icon phone"></div>
           <div class="info">
             <p class="title">Telefone</p>
             <p class="detail">(31) 98267-6163</p>
           </div>
-        </div>
-        <div class="card">
+        </a>
+
+        <a
+          href="mailto:nasondasdoradio1020@gmail.com"
+          class="card"
+        >
           <div class="icon email"></div>
           <div class="info">
             <p class="title">E-mail</p>
             <p class="detail">nasondasdoradio1020@gmail.com</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -46,11 +54,11 @@
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  gap: 50px;
+  gap: 30px;
   text-align: center;
 }
 
@@ -63,13 +71,6 @@
   font-weight: bold;
   color: var(--purple);
   text-align: center;
-}
-
-.text-section .content {
-  font-size: 1.1rem;
-  color: #333;
-  margin-top: 15px;
-  text-align: justify;
 }
 
 .contact-section {
@@ -88,6 +89,15 @@
   border-radius: 10px;
   border: 3px solid var(--grey);
   gap: 15px;
+  text-decoration: none;
+  /* Remove underline dos links */
+  color: inherit;
+  /* Herda a cor para manter o estilo */
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card.whatsapp {
@@ -131,24 +141,14 @@
   margin-top: 5px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
   .text-section {
     width: 90%;
   }
 
   .text-section .header {
     font-size: 2rem;
-  }
-
-  .text-section .content {
-    font-size: 1rem;
-    text-align: justify;
   }
 
   .contact-section {
@@ -178,10 +178,6 @@
 @media (max-width: 480px) {
   .text-section .header {
     font-size: 1.8rem;
-  }
-
-  .text-section .content {
-    font-size: 0.9rem;
   }
 
   .icon {
