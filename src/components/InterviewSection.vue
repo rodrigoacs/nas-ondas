@@ -94,11 +94,13 @@ iframe.video {
 
   .interviews {
     gap: 10px;
+    align-items: center;
   }
 
   .interviews div {
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
   }
 
   iframe.video {
