@@ -57,7 +57,7 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 10px 20px;
     height: auto;
     flex-direction: column;
     gap: 1rem;
