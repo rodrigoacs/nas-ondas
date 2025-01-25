@@ -69,8 +69,7 @@
   }
 
   .navs {
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    display: none;
   }
 
   .navs a {
@@ -86,10 +85,6 @@
 
   .logo {
     height: 50px;
-  }
-
-  .navs {
-    display: none;
   }
 
   .navs a {
