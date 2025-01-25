@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
@@ -53,5 +52,48 @@
   background-image: linear-gradient(#e39c0f 1px, transparent 1px),
     linear-gradient(to right, #e39c0f 1px, #e9ae18 1px);
   background-size: 20px 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .navs {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .navs a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px 10px;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .navs {
+    display: none;
+  }
+
+  .navs a {
+    font-size: 18px;
+  }
 }
 </style>

@@ -42,6 +42,35 @@ const props = defineProps({
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--dark-purple);
-  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .card-image {
+    height: 260px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0.8rem;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
 }
 </style>

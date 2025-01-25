@@ -10,34 +10,33 @@
           <iframe
             id="ytplayer"
             type="text/html"
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
+            class="video"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
             frameborder="0"
           />
           <iframe
             id="ytplayer"
             type="text/html"
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
-            frameborder="0"
-          /><iframe
-            id="ytplayer"
-            type="text/html"
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0&origin=http://example.com"
+            class="video"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
             frameborder="0"
           />
         </div>
         <div>
-          <img
-            src="https://i.ytimg.com/vi/j_nhsENynDs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAlPEL8_okigWOGvgx80kcd1GlhbQ"
-          >
-          <img
-            src="https://i.ytimg.com/vi/j_nhsENynDs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAlPEL8_okigWOGvgx80kcd1GlhbQ"
-          >
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            class="video"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            frameborder="0"
+          />
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            class="video"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            frameborder="0"
+          />
         </div>
       </div>
     </div>
@@ -45,13 +44,11 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
 .container {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: left;
   padding-bottom: 10%;
@@ -59,17 +56,14 @@
 
 .background {
   background-image: url('../assets/onda-cinza.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-title {
   margin-top: 100px;
   margin-left: 280px;
   width: 300px;
-}
-
-img {
-  width: 500px;
-  height: 100%;
 }
 
 .interviews {
@@ -84,5 +78,49 @@ img {
 .interviews div {
   display: flex;
   gap: 20px;
+}
+
+iframe.video {
+  width: 640px;
+  height: 360px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-left: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .interviews {
+    gap: 10px;
+  }
+
+  .interviews div {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  iframe.video {
+    max-width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    width: 250px;
+  }
+
+  iframe.video {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+
 }
 </style>

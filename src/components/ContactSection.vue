@@ -2,32 +2,32 @@
   <div class="background">
     <div class="container">
       <div class="text-section">
-        <p class="header">Como podemos te ajudar?</p>
-        <p class="content">
+        <p class="header">Entre em contato!</p>
+        <!-- <p class="content">
           Não precisa se estressar com chatbots, filas de espera ou em ter que ficar abrindo vários tickets, é só ligar
           ou chamar no WhatsApp que a gente responde.
-        </p>
+        </p> -->
       </div>
       <div class="contact-section">
+        <div class="card whatsapp">
+          <div class="icon whatsapp"></div>
+          <div class="info">
+            <p class="title">WhatsApp</p>
+            <p class="detail">(31) 98267-6163</p>
+          </div>
+        </div>
         <div class="card">
           <div class="icon phone"></div>
           <div class="info">
             <p class="title">Telefone</p>
-            <p class="detail">(31) 99999-9999</p>
+            <p class="detail">(31) 98267-6163</p>
           </div>
         </div>
         <div class="card">
           <div class="icon email"></div>
           <div class="info">
             <p class="title">E-mail</p>
-            <p class="detail">nasondas@gmail.com</p>
-          </div>
-        </div>
-        <div class="card whatsapp">
-          <div class="icon whatsapp"></div>
-          <div class="info">
-            <p class="title">WhatsApp</p>
-            <p class="detail">(31) 99999-9999</p>
+            <p class="detail">nasondasdoradio1020@gmail.com</p>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--purple);
-  text-align: left;
+  text-align: center;
 }
 
 .text-section .content {
@@ -129,5 +129,72 @@
 .info .detail {
   font-size: 1rem;
   margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .text-section {
+    width: 90%;
+  }
+
+  .text-section .header {
+    font-size: 2rem;
+  }
+
+  .text-section .content {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .contact-section {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info .title {
+    font-size: 1rem;
+  }
+
+  .info .detail {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section .header {
+    font-size: 1.8rem;
+  }
+
+  .text-section .content {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .info .title {
+    font-size: 0.9rem;
+  }
+
+  .info .detail {
+    font-size: 0.8rem;
+  }
 }
 </style>

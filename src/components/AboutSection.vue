@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
@@ -60,5 +59,46 @@
   object-fit: cover;
   border-radius: 26px;
   margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 30px;
+    height: auto;
+  }
+
+  .section-title {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  .profile-picture {
+    width: 80%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-picture {
+    max-width: 200px;
+  }
 }
 </style>
