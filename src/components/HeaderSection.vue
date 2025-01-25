@@ -58,7 +58,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10%;
   height: 80px;
 }
 
@@ -86,7 +86,7 @@
   gap: 0.5rem;
   text-decoration: none;
   color: var(--purple);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-text {

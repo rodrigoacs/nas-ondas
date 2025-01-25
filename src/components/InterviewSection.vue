@@ -18,7 +18,7 @@
             id="ytplayer"
             type="text/html"
             class="video"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            src="https://www.youtube.com/embed/EqGIkANPMNU?autoplay=0"
             frameborder="0"
           />
         </div>
@@ -27,14 +27,14 @@
             id="ytplayer"
             type="text/html"
             class="video"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            src="https://www.youtube.com/embed/HyF6pLrMJWo?autoplay=0"
             frameborder="0"
           />
           <iframe
             id="ytplayer"
             type="text/html"
             class="video"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            src="https://www.youtube.com/embed/jUOMrReKrFM?autoplay=0"
             frameborder="0"
           />
         </div>
@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding-bottom: 10%;
+  padding: 10px;
 }
 
 .background {

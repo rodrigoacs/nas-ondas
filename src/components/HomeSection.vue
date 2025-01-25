@@ -47,7 +47,7 @@ img {
 }
 
 .main-text {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
