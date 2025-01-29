@@ -2,7 +2,7 @@
   <div class="background">
     <div class="container">
       <img
-        src="../assets/entrevistas.png"
+        src="../assets/entrevistas.avif"
         class="section-title"
       >
       <div class="interviews">
@@ -480,7 +480,7 @@ onMounted(() => {
 }
 
 .background {
-  background-image: url('../assets/onda-cinza.png');
+  background-image: url('../assets/onda-cinza.avif');
   background-size: cover;
   background-repeat: no-repeat;
 }
