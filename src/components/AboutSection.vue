@@ -7,17 +7,30 @@
           class="section-title"
         >
         <p class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Com mais de <b>30 anos de experiência</b> no mundo da comunicação, Luiz Evandro se destaca como <b>locutor,
+            apresentador
+            e mestre de cerimônias</b>, proporcionando uma presença única e marcante em eventos como <b>grandes shows,
+            convenções, lançamentos de produtos, festa de 15 anos e formaturas.</b> Sua
+          trajetória começou na <b>Rádio Congonhas</b> em 1993, trabalhou também nas <b>Rádio Inconfidência</b> de Belo
+          Horizonte,
+          <b>Rádio Educativa FM</b> em Congonhas e na <b>Rádio Colonial</b> FM onde desenvolveu uma habilidade impecável
+          de <b> conectar-se com o público através da voz</b>, se tornando uma referência.
+
+          Seu <b>estilo cativante</b>, aliado a uma excelente <b>capacidade de improviso e adaptação ao público</b>, o
+          tornaram
+          uma
+          escolha de confiança
+          para empresas e organizações que buscam qualidade e profissionalismo.
+
+          Além de sua carreira como locutor e apresentador, Luiz Evandro também é conhecido por sua <b>habilidade em
+            criar
+            um ambiente acolhedor e envolvente, independentemente do porte do evento</b>. Sua energia contagiante e
+          carisma
+          são elementos que fazem de cada evento uma <b>experiência inesquecível</b>.
         </p>
       </div>
       <img
-        src="../../public/placeholder.png"
+        src="../../public/foto-bio.jpg"
         class="profile-picture"
       >
     </div>
@@ -28,13 +41,17 @@
 </script>
 
 <style scoped>
+b {
+  color: var(--highlight-color);
+  font-weight: 700;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 180px;
-  height: 450px;
-  gap: 100px;
+  padding: 40px 180px;
+  gap: 50px;
 }
 
 .background {
@@ -46,7 +63,6 @@
 }
 
 .content {
-  width: 600px;
   color: var(--white);
   font-size: 20px;
   line-height: 30px;
@@ -54,11 +70,9 @@
 }
 
 .profile-picture {
-  width: 300px;
   height: 400px;
   object-fit: cover;
   border-radius: 26px;
-  margin-left: 50px;
 }
 
 @media (max-width: 768px) {
@@ -84,9 +98,8 @@
   }
 
   .profile-picture {
-    width: 80%;
+    width: 100%;
     height: auto;
-    max-width: 250px;
     margin: 0 auto;
   }
 }
@@ -95,10 +108,6 @@
   .content {
     font-size: 14px;
     line-height: 20px;
-  }
-
-  .profile-picture {
-    max-width: 200px;
   }
 }
 </style>
