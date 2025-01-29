@@ -6,6 +6,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    target: 'esnext',
+    minify: 'esbuild',
+    sourcemap: false,
+    cssCodeSplit: true,
+  },
   plugins: [
     vue(),
     vueDevTools(),
