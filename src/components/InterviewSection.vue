@@ -7,24 +7,8 @@
       >
       <div class="interviews">
         <div>
-          <iframe
-            class="video"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?si=tlzkr4LR54Kxu8RR&amp;controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
-          <iframe
-            class="video"
-            src="https://www.youtube.com/embed/jUOMrReKrFM?si=tlzkr4LR54Kxu8RR&amp;controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
+          <lite-youtube videoid="V9Cf_XlcYTg" />
+          <lite-youtube videoid="jUOMrReKrFM" />
         </div>
         <div>
           <blockquote
@@ -521,10 +505,17 @@ onMounted(() => {
   gap: 20px;
 }
 
-iframe.video {
+lite-youtube {
   width: 640px;
   height: 360px;
 }
+
+.instagram-media {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 @media (max-width: 768px) {
   .section-title {
@@ -544,26 +535,19 @@ iframe.video {
     justify-content: center;
   }
 
-  iframe.video {
-    max-width: 90%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+  lite-youtube {
+    width: 340px;
+    height: 191px;
   }
-
 
 }
 
 @media (max-width: 480px) {
   .section-title {
-    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
-
-  iframe.video {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
 
 }
 </style>
