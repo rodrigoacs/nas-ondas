@@ -10,7 +10,7 @@
         src="../assets/decor-amarelo.svg"
       >
       <img
-        src="../assets/eventos.png"
+        src="../assets/eventos.avif"
         class="section-title"
       >
       <div class="interviews">

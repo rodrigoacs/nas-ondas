@@ -8,8 +8,7 @@
       <div class="interviews">
         <div>
           <iframe
-            width="640"
-            height="360"
+            class="video"
             src="https://www.youtube.com/embed/V9Cf_XlcYTg?si=tlzkr4LR54Kxu8RR&amp;controls=0"
             title="YouTube video player"
             frameborder="0"
@@ -18,8 +17,7 @@
             allowfullscreen
           />
           <iframe
-            width="640"
-            height="360"
+            class="video"
             src="https://www.youtube.com/embed/jUOMrReKrFM?si=tlzkr4LR54Kxu8RR&amp;controls=0"
             title="YouTube video player"
             frameborder="0"
@@ -524,12 +522,9 @@ onMounted(() => {
 }
 
 iframe.video {
-  width: 100%;
-  max-width: 640px;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  width: 640px;
+  height: 360px;
 }
-
 
 @media (max-width: 768px) {
   .section-title {

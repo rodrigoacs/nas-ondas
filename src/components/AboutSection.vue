@@ -3,7 +3,7 @@
     <div class="container">
       <div>
         <img
-          src="../assets/quem-somos.png"
+          src="../assets/quem-somos.avif"
           class="section-title"
         >
         <p class="content">
@@ -30,7 +30,7 @@
         </p>
       </div>
       <img
-        src="../../public/foto-bio.jpg"
+        src="../../public/foto-bio.avif"
         class="profile-picture"
       >
     </div>

@@ -1,15 +1,15 @@
 <template>
   <div class="container">
     <img
-      src="../assets/cafe.png"
+      src="../assets/cafe.avif"
       class="cafe"
     >
     <img
-      src="../assets/noticias.png"
+      src="../assets/noticias.avif"
       class="section-title"
     >
     <img
-      src="../assets/caneta.png"
+      src="../assets/caneta.avif"
       class="caneta"
     >
     <h1 class="subtitle">Notícias do Momento</h1>

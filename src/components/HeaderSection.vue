@@ -7,7 +7,7 @@
       >
         <img
           class="logo"
-          src="../assets/logo-texto.png"
+          src="../assets/logo-texto.avif"
           alt="Logo"
         />
       </a>
