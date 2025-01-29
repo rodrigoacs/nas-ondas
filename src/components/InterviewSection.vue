@@ -8,18 +8,24 @@
       <div class="interviews">
         <div>
           <iframe
-            id="ytplayer"
-            type="text/html"
-            class="video"
-            src="https://www.youtube.com/embed/V9Cf_XlcYTg?autoplay=0"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/V9Cf_XlcYTg?si=tlzkr4LR54Kxu8RR&amp;controls=0"
+            title="YouTube video player"
             frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           />
           <iframe
-            id="ytplayer"
-            type="text/html"
-            class="video"
-            src="https://www.youtube.com/embed/jUOMrReKrFM?autoplay=0"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/jUOMrReKrFM?si=tlzkr4LR54Kxu8RR&amp;controls=0"
+            title="YouTube video player"
             frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           />
         </div>
         <div>
@@ -130,7 +136,8 @@
                   href="https://www.instagram.com/reel/C_MscH6R8jf/?utm_source=ig_embed&amp;utm_campaign=loading"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
-                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a></p>
+                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
+              </p>
             </div>
           </blockquote>
           <blockquote
@@ -240,7 +247,8 @@
                   href="https://www.instagram.com/reel/C_Mp0qcRAz8/?utm_source=ig_embed&amp;utm_campaign=loading"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
-                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a></p>
+                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
+              </p>
             </div>
           </blockquote>
           <blockquote
@@ -350,7 +358,8 @@
                   href="https://www.instagram.com/reel/C-zuXelxwcg/?utm_source=ig_embed&amp;utm_campaign=loading"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
-                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a></p>
+                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
+              </p>
             </div>
           </blockquote>
           <blockquote
@@ -460,7 +469,8 @@
                   href="https://www.instagram.com/reel/DEnn4M2BGbd/?utm_source=ig_embed&amp;utm_campaign=loading"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
-                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a></p>
+                >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
+              </p>
             </div>
           </blockquote>
         </div>
@@ -470,6 +480,13 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  if (window.instgrm) {
+    window.instgrm.Embeds.process()
+  }
+})
 </script>
 
 <style scoped>
@@ -507,9 +524,12 @@
 }
 
 iframe.video {
-  width: 640px;
-  height: 360px;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
+
 
 @media (max-width: 768px) {
   .section-title {
