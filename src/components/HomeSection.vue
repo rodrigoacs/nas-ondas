@@ -3,6 +3,7 @@
     <img
       id="banner"
       :src="imageSrc"
+      alt="Banner de fundo"
     />
     <div class="banner-content">
       <p class="main-text">
