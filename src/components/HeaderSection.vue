@@ -8,44 +8,53 @@
         <img
           class="logo"
           src="../assets/logo-texto.avif"
-          alt="Logo"
+          alt="Logo da empresa"
         />
       </a>
-      <div class="navs">
+      <nav class="navs">
         <a
           href="#interview"
           class="nav-item"
+          tabindex="0"
+          aria-label="Ir para entrevistas"
         >
           <span class="nav-text">ENTREVISTAS</span>
           <img
+            loading="lazy"
             src="https://cdn-icons-png.flaticon.com/512/1436/1436769.png"
-            alt="Entrevistas"
+            alt="Ícone representando a seção de entrevistas"
             class="icon"
           />
         </a>
         <a
           href="#about"
           class="nav-item"
+          tabindex="0"
+          aria-label="Ir para a seção 'Quem Somos?'"
         >
           <span class="nav-text">QUEM SOMOS?</span>
           <img
+            loading="lazy"
             src="https://cdn-icons-png.flaticon.com/512/681/681494.png"
-            alt="Quem Somos"
+            alt="Ícone representando a seção Quem Somos"
             class="icon"
           />
         </a>
         <a
           href="#contact"
           class="nav-item"
+          tabindex="0"
+          aria-label="Ir para a seção de contato"
         >
           <span class="nav-text">CONTATO</span>
           <img
+            loading="lazy"
             src="https://cdn-icons-png.flaticon.com/512/8485/8485251.png"
-            alt="Contato"
+            alt="Ícone representando a seção de contato"
             class="icon"
           />
         </a>
-      </div>
+      </nav>
     </div>
   </div>
 </template>

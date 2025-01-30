@@ -5,16 +5,19 @@
         href="https://www.instagram.com/nasondascomluizevandro/"
         target="_blank"
         class="icon instagram"
+        aria-label="Visitar o perfil no Instagram"
       ></a>
       <a
         href="https://www.facebook.com/luizevandronasondasdoradio"
         target="_blank"
         class="icon facebook"
+        aria-label="Visitar o perfil no Facebook"
       ></a>
       <a
         href="https://www.youtube.com/@luizevandronasondas2400"
         target="_blank"
         class="icon youtube"
+        aria-label="Visitar o canal no YouTube"
       ></a>
     </div>
   </footer>
@@ -61,5 +64,27 @@
 .icon:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
 }
 </style>

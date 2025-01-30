@@ -9,8 +9,12 @@
           href="https://wa.me/5531982676163"
           target="_blank"
           class="card whatsapp"
+          aria-label="Contato via WhatsApp"
         >
-          <div class="icon whatsapp"></div>
+          <div
+            class="icon whatsapp"
+            aria-hidden="true"
+          ></div>
           <div class="info">
             <p class="title">WhatsApp</p>
             <p class="detail">(31) 98267-6163</p>
@@ -20,8 +24,12 @@
         <a
           href="tel:+5531982676163"
           class="card"
+          aria-label="Ligar para o telefone (31) 98267-6163"
         >
-          <div class="icon phone"></div>
+          <div
+            class="icon phone"
+            aria-hidden="true"
+          ></div>
           <div class="info">
             <p class="title">Telefone</p>
             <p class="detail">(31) 98267-6163</p>
@@ -31,8 +39,12 @@
         <a
           href="mailto:nasondasdoradio1020@gmail.com"
           class="card"
+          aria-label="Enviar e-mail para nasondasdoradio1020@gmail.com"
         >
-          <div class="icon email"></div>
+          <div
+            class="icon email"
+            aria-hidden="true"
+          ></div>
           <div class="info">
             <p class="title">E-mail</p>
             <p class="detail">nasondasdoradio1020@gmail.com</p>
@@ -90,9 +102,7 @@
   border: 3px solid var(--grey);
   gap: 15px;
   text-decoration: none;
-  /* Remove underline dos links */
   color: inherit;
-  /* Herda a cor para manter o estilo */
   transition: transform 0.2s ease;
 }
 

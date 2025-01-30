@@ -5,34 +5,31 @@
         <img
           src="../assets/quem-somos.avif"
           class="section-title"
-        >
+          alt="Seção Quem Somos"
+          loading="lazy"
+        />
         <p class="content">
           Com mais de <b>30 anos de experiência</b> no mundo da comunicação, Luiz Evandro se destaca como <b>locutor,
-            apresentador
-            e mestre de cerimônias</b>, proporcionando uma presença única e marcante em eventos como <b>grandes shows,
-            convenções, lançamentos de produtos, festa de 15 anos e formaturas.</b> Sua
-          trajetória começou na <b>Rádio Congonhas</b> em 1993, trabalhou também nas <b>Rádio Inconfidência</b> de Belo
-          Horizonte,
-          <b>Rádio Educativa FM</b> em Congonhas e na <b>Rádio Colonial</b> FM onde desenvolveu uma habilidade impecável
-          de <b> conectar-se com o público através da voz</b>, se tornando uma referência.
+            apresentador e mestre de cerimônias</b>, proporcionando uma presença única e marcante em eventos como
+          <b>grandes shows, convenções, lançamentos de produtos, festa de 15 anos e formaturas.</b> Sua trajetória
+          começou na <b>Rádio Congonhas</b> em 1993, trabalhou também nas <b>Rádio Inconfidência</b> de Belo Horizonte,
+          <b>Rádio Educativa FM</b> em Congonhas e na <b>Rádio Colonial</b> FM onde desenvolveu uma habilidade
+          impecável de <b> conectar-se com o público através da voz</b>, se tornando uma referência.
 
           Seu <b>estilo cativante</b>, aliado a uma excelente <b>capacidade de improviso e adaptação ao público</b>, o
-          tornaram
-          uma
-          escolha de confiança
-          para empresas e organizações que buscam qualidade e profissionalismo.
+          tornaram uma escolha de confiança para empresas e organizações que buscam qualidade e profissionalismo.
 
           Além de sua carreira como locutor e apresentador, Luiz Evandro também é conhecido por sua <b>habilidade em
-            criar
-            um ambiente acolhedor e envolvente, independentemente do porte do evento</b>. Sua energia contagiante e
-          carisma
-          são elementos que fazem de cada evento uma <b>experiência inesquecível</b>.
+            criar um ambiente acolhedor e envolvente, independentemente do porte do evento</b>. Sua energia contagiante
+          e carisma são elementos que fazem de cada evento uma <b>experiência inesquecível</b>.
         </p>
       </div>
       <img
-        src="../../public/foto-bio.avif"
+        src="/foto-bio.avif"
         class="profile-picture"
-      >
+        alt="Foto de Luiz Evandro"
+        loading="lazy"
+      />
     </div>
   </div>
 </template>

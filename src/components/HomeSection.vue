@@ -1,6 +1,9 @@
 <template>
   <div class="banner-container">
-    <img src="../assets/banner-home.jpg" />
+    <img
+      id="banner"
+      :src="imageSrc"
+    />
     <div class="banner-content">
       <p class="main-text">
         <strong>Bem-vindo</strong> ao espaço onde cada palavra amplifica sua mensagem.
@@ -14,6 +17,23 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+
+const windowWidth = ref(window.innerWidth)
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
+
+const imageSrc = computed(() => windowWidth.value <= 768 ? '/banner-home-mobile.avif' : '/banner-home.avif')
 </script>
 
 <style scoped>
