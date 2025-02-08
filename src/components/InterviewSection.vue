@@ -6,20 +6,20 @@
         class="section-title"
       >
       <div class="interviews">
-        <div>
-          <lite-youtube videoid="H3vk0GvYSKg" />
-          <lite-youtube videoid="RkiTSXIbvR8" />
+        <div v-if="!loading">
+          <lite-youtube :videoid="videoIds.youtube1" />
+          <lite-youtube :videoid="videoIds.youtube2" />
         </div>
         <div>
           <blockquote
             class="instagram-media"
             data-instgrm-captioned
-            data-instgrm-permalink="https://www.instagram.com/reel/C_MscH6R8jf/?utm_source=ig_embed&amp;utm_campaign=loading"
+            :data-instgrm-permalink="`https://www.instagram.com/reel/${videoIds.instagram1}/?utm_source=ig_embed&amp;utm_campaign=loading`"
             data-instgrm-version="14"
             style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
           >
             <div style="padding:16px;"> <a
-                href="https://www.instagram.com/reel/C_MscH6R8jf/?utm_source=ig_embed&amp;utm_campaign=loading"
+                :href="`https://www.instagram.com/reel/${videoIds.instagram1}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank"
               >
@@ -115,7 +115,7 @@
               <p
                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                 <a
-                  href="https://www.instagram.com/reel/C_MscH6R8jf/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  :href="`https://www.instagram.com/reel/${videoIds.instagram1}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
                 >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
@@ -125,12 +125,12 @@
           <blockquote
             class="instagram-media"
             data-instgrm-captioned
-            data-instgrm-permalink="https://www.instagram.com/reel/C_Mp0qcRAz8/?utm_source=ig_embed&amp;utm_campaign=loading"
+            :data-instgrm-permalink="`https://www.instagram.com/reel/${videoIds.instagram2}/?utm_source=ig_embed&amp;utm_campaign=loading`"
             data-instgrm-version="14"
             style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
           >
             <div style="padding:16px;"> <a
-                href="https://www.instagram.com/reel/C_Mp0qcRAz8/?utm_source=ig_embed&amp;utm_campaign=loading"
+                :href="`https://www.instagram.com/reel/${videoIds.instagram2}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank"
               >
@@ -226,7 +226,7 @@
               <p
                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                 <a
-                  href="https://www.instagram.com/reel/C_Mp0qcRAz8/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  :href="`https://www.instagram.com/reel/${videoIds.instagram2}}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
                 >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
@@ -236,12 +236,12 @@
           <blockquote
             class="instagram-media"
             data-instgrm-captioned
-            data-instgrm-permalink="https://www.instagram.com/reel/C-zuXelxwcg/?utm_source=ig_embed&amp;utm_campaign=loading"
+            :data-instgrm-permalink="`https://www.instagram.com/reel/${videoIds.instagram3}/?utm_source=ig_embed&amp;utm_campaign=loading`"
             data-instgrm-version="14"
             style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
           >
             <div style="padding:16px;"> <a
-                href="https://www.instagram.com/reel/C-zuXelxwcg/?utm_source=ig_embed&amp;utm_campaign=loading"
+                :href="`https://www.instagram.com/reel/${videoIds.instagram3}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank"
               >
@@ -337,7 +337,7 @@
               <p
                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                 <a
-                  href="https://www.instagram.com/reel/C-zuXelxwcg/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  :href="`https://www.instagram.com/reel/${videoIds.instagram3}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
                 >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
@@ -347,12 +347,12 @@
           <blockquote
             class="instagram-media"
             data-instgrm-captioned
-            data-instgrm-permalink="https://www.instagram.com/reel/DEnn4M2BGbd/?utm_source=ig_embed&amp;utm_campaign=loading"
+            :data-instgrm-permalink="`https://www.instagram.com/reel/${videoIds.instagram4}/?utm_source=ig_embed&amp;utm_campaign=loading`"
             data-instgrm-version="14"
             style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
           >
             <div style="padding:16px;"> <a
-                href="https://www.instagram.com/reel/DEnn4M2BGbd/?utm_source=ig_embed&amp;utm_campaign=loading"
+                :href="`https://www.instagram.com/reel/${videoIds.instagram4}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                 style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                 target="_blank"
               >
@@ -448,7 +448,7 @@
               <p
                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                 <a
-                  href="https://www.instagram.com/reel/DEnn4M2BGbd/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  :href="`https://www.instagram.com/reel/${videoIds.instagram4}/?utm_source=ig_embed&amp;utm_campaign=loading`"
                   style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                   target="_blank"
                 >Uma publicação compartilhada por Luiz Evandro (Portal de Notícias) (@nasondascomluizevandro)</a>
@@ -462,14 +462,39 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref } from 'vue'
 
-onMounted(() => {
-  if (window.instgrm) {
-    window.instgrm.Embeds.process()
-  }
+const loading = ref(true)
+
+const videoIds = ref({
+  youtube1: '',
+  youtube2: '',
+  instagram1: '',
+  instagram2: '',
+  instagram3: '',
+  instagram4: '',
 })
+
+async function fetchVideoIds() {
+  try {
+    const response = await fetch('http://localhost:3000/config')
+    if (!response.ok) throw new Error('Failed to fetch video IDs.')
+    const data = await response.json()
+    videoIds.value = data
+  } catch (error) {
+    console.error('Error fetching video IDs:', error)
+  } finally {
+    loading.value = false
+  }
+}
+
+fetchVideoIds()
+
+if (window.instgrm) {
+  window.instgrm.Embeds.process()
+}
 </script>
+
 
 <style scoped>
 .container {
