@@ -477,7 +477,7 @@ const videoIds = ref({
 
 async function fetchVideoIds() {
   try {
-    const response = await fetch('http://localhost:3000/config')
+    const response = await fetch('https://librishelf.com/nasondas-api/config')
     if (!response.ok) throw new Error('Failed to fetch video IDs.')
     const data = await response.json()
     videoIds.value = data
