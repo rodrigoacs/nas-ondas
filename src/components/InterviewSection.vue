@@ -462,7 +462,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, watch, nextTick } from 'vue'
 
 const loading = ref(true)
 
@@ -490,13 +490,13 @@ async function fetchVideoIds() {
 
 fetchVideoIds()
 
-onMounted(() => {
+watch(videoIds, async () => {
+  await nextTick()
   if (window.instgrm) {
     window.instgrm.Embeds.process()
   }
 })
 </script>
-
 
 <style scoped>
 .container {
