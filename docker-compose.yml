@@ -5,7 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: nas-ondas-frontend
-    ports:
-      - "8080:80"
+    container_name: nasondas-frontend
     restart: unless-stopped
+    networks:
+    - proxy
+
+networks:
+    proxy:
+        external: true
