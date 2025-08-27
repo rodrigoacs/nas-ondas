@@ -1,0 +1,29 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diretório de dependências
+node_modules/
+
+# Diretório de build
+dist
+
+# Cache do Vite
+.vite
+
+# Arquivos de ambiente local
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# Configurações de IDE
+.vscode/
+.idea/

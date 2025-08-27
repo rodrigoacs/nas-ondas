@@ -47,7 +47,7 @@ b {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 180px;
+  padding: 40px 40px;
   gap: 50px;
 }
 
