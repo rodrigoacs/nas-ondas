@@ -1,29 +1,37 @@
-# nas-ondas
+# Nas Ondas com Luiz Evandro - Official Website
 
-This template should help get you started developing with Vue 3 in Vite.
+## 🌟 About The Project
 
-## Recommended IDE Setup
+Welcome to the official repository for the "Nas Ondas com Luiz Evandro" website\! This project is a modern, responsive, and feature-rich portfolio for the renowned radio host Luiz Evandro, showcasing over 30 years of his experience in the communication field.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This single-page application is built with the latest web technologies to provide a seamless and engaging user experience. It serves as a comprehensive digital portfolio, featuring everything from his professional journey to his most recent interviews.
 
-## Customize configuration
+### ✨ Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+  * **Fully Responsive Design:** A stunning and accessible experience on desktops, tablets, and mobile devices.
+  * **Dynamic Content:** Fetches and displays the latest YouTube and Instagram interviews dynamically.
+  * **Interactive UI:** Smooth scrolling, engaging animations, and a user-friendly interface.
+  * **Component-Based Architecture:** Built with reusable and maintainable Vue 3 components.
 
-## Project Setup
+## 🚀 Tech Stack
 
-```sh
-npm install
-```
+This project is built with a modern and powerful tech stack:
 
-### Compile and Hot-Reload for Development
+  * **Frontend:** [Vue 3](https://vuejs.org/)
+  * **Build Tool:** [Vite](https://vitejs.dev/)
+  * **Styling:** CSS with responsive media queries
+  * **Deployment:** [Docker](https://www.docker.com/), [Nginx](https://www.nginx.com/)
 
-```sh
-npm run dev
-```
+## 🤝 Contributing
 
-### Compile and Minify for Production
+Any contributions you make are **greatly appreciated**.
 
-```sh
-npm run build
-```
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+-----
+
+Made with ❤️ by **[acs](https://github.com/rodrigoacs)**
